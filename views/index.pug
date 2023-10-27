@@ -3,13 +3,5 @@ extends layout
 block content
   h1= title
   p I like watching Tom and Jerry.
-  button(type="button", class="btn btn-success" onclick="goFaster()") Press Me
-  div#faster Increase the speed
-    var mph = 20;
-      var change = 1;
-
-      function goFaster() {
-        mph += change;
-        change++;
-        document.getElementById('faster').textContent = `MPH ${mph} with change ${change}`;
-      }
+  <button type="button" class="btn btn-success">Press Me</button>
+ 
