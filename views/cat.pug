@@ -1,0 +1,12 @@
+extends layout
+block content
+    div(class="container-fluid")
+        h1= title
+    - let results=[{cat_color:"brown",cat_breed:"Flemish Giant cat",cat_price:2000},{cat_color:"white",cat_breed:"Angora cat",cat_price:5500},{cat_color:"black",cat_breed:"Havana",cat_price:4000}]
+        div(class="row")
+            each form,item in results
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.cat_color}              
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.cat_breed}                
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${item})`) #{form.cat_price}
+                hr
+   
