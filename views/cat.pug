@@ -14,7 +14,7 @@ block content
     div(class="container-fluid")
       each cat,index in results
         div(class="row", onclick=`buy(${index})`)
-          div(class="col-sm-2") <br>cat #{index}: #{cat.cat_color} breed:#{cat.cat_breed} price:#{cat.cat_price}
+          div(class="col-sm-2") <br>cat #{index}: #{cat.cat_color} <br>breed:#{cat.cat_breed} price:#{cat.cat_price}
     script.
         function buy(itemNo)
         {
